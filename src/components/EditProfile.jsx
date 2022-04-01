@@ -41,35 +41,33 @@ export default function EditProfile({ setCurrentUser, currentUser, handleEditPag
 
 
 
-
-
-    const handleSaveText = async (e) => {
-        e.preventDefault() 
-        const token = localStorage.getItem('jwt')
-        const options = {
-            headers: {
-              'Authorization': token
-            },
-            new : true
-        }
-        try {
-            // axios call to get and update the current users profile-img
-            const uploadedImage = await axios.put(
-                `${process.env.REACT_APP_SERVER_URL}/api-v1/profile/${currentUser.id}`,
-                editProfile, options
-            )
-            setCurrentUser({
-                id: currentUser.id,
-                name: editProfile.name,
-                email: currentUser.email,
-                iat: currentUser.iat,
-                exp: currentUser.exp,
-                bio: editProfile.bio,
-            })
-        } catch (err) {
-            console.log(err)
-        }
-    }
+    // const handleSaveText = async (e) => {
+    //     e.preventDefault() 
+    //     const token = localStorage.getItem('jwt')
+    //     const options = {
+    //         headers: {
+    //           'Authorization': token
+    //         },
+    //         new : true
+    //     }
+    //     try {
+    //         // axios call to get and update the current users profile-img
+    //         const uploadedImage = await axios.put(
+    //             `${process.env.REACT_APP_SERVER_URL}/api-v1/profile/${currentUser.id}`,
+    //             editProfile, options
+    //         )
+    //         setCurrentUser({
+    //             id: currentUser.id,
+    //             name: editProfile.name,
+    //             email: currentUser.email,
+    //             iat: currentUser.iat,
+    //             exp: currentUser.exp,
+    //             bio: editProfile.bio,
+    //         })
+    //     } catch (err) {
+    //         console.log(err)
+    //     }
+    // }
 
     
     return (
@@ -115,7 +113,7 @@ export default function EditProfile({ setCurrentUser, currentUser, handleEditPag
                                     </button>
                                 </div>
                         </form>
-                        <form>
+                        {/* <form>
                                 <label
                                     className="label"
                                     htmlFor="username"
@@ -149,7 +147,7 @@ export default function EditProfile({ setCurrentUser, currentUser, handleEditPag
                                     Save
                                 </button>
                             </div>
-                        </form>
+                        </form> */}
                     </div>
                     <div className="followers-wrapper">
                         {/* <div className='followers'>Rooms: 1000</div>

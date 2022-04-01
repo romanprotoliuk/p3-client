@@ -85,6 +85,22 @@ export default function Register({ currentUser, setCurrentUser }) {
                 </div>
 
                 <div className="login-form-email">
+                    <label className="label" htmlFor="bio">
+                        Your bio:
+                    </label>
+                    <input
+                        className="enter-your-name"
+                        type="text"
+                        id="bio"
+                        value={form.bio}
+                        onChange={(e) =>
+                            setForm({ ...form, bio: e.target.value })
+                        }
+                        placeholder="Short bio..."
+                    />
+                </div>
+
+                <div className="login-form-email">
                     <label className="label" htmlFor="password">
                         Password:
                     </label>

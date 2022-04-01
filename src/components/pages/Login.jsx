@@ -28,6 +28,7 @@ export default function Login({ currentUser, setCurrentUser }) {
             const decoded = jwt_decode(token)
             localStorage.setItem("jwt", token)
             setCurrentUser(decoded)
+            // Set a new state for avatar image
 
             navigate("/timeline", { replace: true })
         } catch (err) {

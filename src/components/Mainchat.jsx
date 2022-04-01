@@ -107,6 +107,7 @@ export default function Mainchat({
             </div>
         )
     })
+    console.log(currentUser)
 
     return (
         <div className="main-chat-wrapper">
