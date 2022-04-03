@@ -4,6 +4,7 @@ Andy
 
 # Introduction
 - After learning some React and MongoDB basics, our team wanted to further their knowledge of the MERN stack so we built a lightweight chat app (using socket.io for realtime chat).  Every member on this team has had their hands on every portion of this app from writing React code, backend code and CSS.  We all learned a lot about the MERN stack as a whole, as well as the additional knowledge we picked up from using socket.io tutorials and combing through the docs for all the technologies we used.
+- [Server Code](https://github.com/snacksident/p3server) 
 
 # Technologies Used for Front End
 - Javascript (utlizing Axios for API interaction)
@@ -18,6 +19,10 @@ Andy
 - as a user i want to be able to delete my account
 - as a user i want to have a profile where i could edit my name, profile picture, and the about me section
 - as a user i want to see a name, thumbnail of profile picture, and timestamp for each post
+
+# Final Product
+![Chat-app](./public/chat-app2.jpg)
+![Chat-app](./public/chat-app.jpg)
 
 # ERDs 
 ![ERD](./public/newerd.png)

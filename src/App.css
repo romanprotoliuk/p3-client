@@ -516,8 +516,13 @@ input[type="text"] {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  text-decoration: none;
   background-color: black;
   color: white;
+}
+
+.link-for-logout {
+  text-decoration: none;
 }
 
 /* Chatdetails Component */

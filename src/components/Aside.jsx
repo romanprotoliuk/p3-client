@@ -14,7 +14,7 @@ export default function Aside({ setCurrentUser, currentUser, handleLogout }) {
                     <Profile setCurrentUser={setCurrentUser} currentUser={currentUser} />
                 </div>
                 <div className="aside-footer">
-                    <Link to="/">
+                    <Link className="link-for-logout" to="/">
                         <span className="logout-btn" onClick={handleLogout}>
                             log out
                         </span>
